@@ -1,0 +1,104 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+
+@charset "utf-8";
+
+/* common */
+body {
+  font-size: 14px;
+  font-family: Verdana, sans-serif;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width:1170px;
+  width:100%;
+  padding: 0 15px;
+  margin:0 auto;
+}
+.h2 {
+  text-align: center;
+  font-size: 40px;
+  padding: 120px 0 50px 0 ;
+}
+
+/**********************************/
+
+header {
+  height: 65px;
+  width:100%;
+  background-color:#f4f4f4;
+  position: fixed;
+  top:0;
+  z-index:10;
+}
+.logo {
+  color: #555;
+  line-height: 65px;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing:3px;
+}
+
+.header-left {
+  float:left;
+}
+.header-right {
+  float: right;
+  display:block;
+}
+.header-right li{
+  float: right;
+  list-style: none;
+  line-height:65px;
+  margin-left: 30px;
+}
+.header-right a{
+  display: block;
+  color: #555;
+}
+.header-menu {
+  color: #555;
+  float: right;
+  font-size: 25px;
+  line-height:50px;
+  display:none;
+}
+
+
+/**********************************/
+main {
+  background-image: url(https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/practice/backgrounds/top.jpg);
+  background-size:cover;
+  text-align:center;
+  height:1000px;
+  width:100%;
+}
+.bg-black {
+  background-color: rgba(0, 0, 0, 0.7);
+  height:1000px;
+}
+main h1 {
+  color: rgba(250, 250, 250, .9);
+  padding-top: 200px;
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+main p {
+  color: rgba(250, 250, 250, .9);
+  padding-top: 50px;
+  padding-bottom: 70px;
+  font-size: 30px;
+  font-weight: normal;
+}
+.btn-space {
+  margin-right:30px;
+}
+/**********************************/
