@@ -46,6 +46,8 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'sqlite3'
+  # railsチュートリアルよりsqlite3が本番環境で導入されないよう対応
 end
 
 group :development do
@@ -56,6 +58,11 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
+
+group :production do
+  gem 'pg', '0.20.0'
+end
+# railsチュートリアルより本番でherokuを使うためProduction環境ではPostgreを使う設定を記述
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
