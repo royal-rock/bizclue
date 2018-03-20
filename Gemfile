@@ -47,7 +47,7 @@ group :development, :test do
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
   gem 'sqlite3'
-  # railsチュートリアルよりsqlite3が本番環境で導入されないよう対応
+  # railsチュートリアルよりsqlite3が本番環境で導入されないよう対応した
 end
 
 group :development do
