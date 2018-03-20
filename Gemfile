@@ -46,7 +46,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
-  gem 'sqlite3'
+  gem 'sqlite3', '1.3.13'
   # railsチュートリアルよりsqlite3が本番環境で導入されないよう対応した
 end
 
